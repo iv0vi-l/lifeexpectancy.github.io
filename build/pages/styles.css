@@ -1,0 +1,81 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+
+/* Custom styles */
+.bg-blue-100 {
+    background-color: #ebf5ff;
+}
+.text-blue-600 {
+    color: #2563eb;
+}
+.bg-green-100 {
+    background-color: #d1fae5;
+}
+.text-green-500 {
+    color: #10b981;
+}
+.bg-purple-100 {
+    background-color: #f3e8ff;
+}
+.text-purple-500 {
+    color: #8b5cf6;
+}
+
+/* Responsive adjustments */
+@media (max-width: 1024px) {
+    .lg\:ml-64 {
+        margin-left: 0;
+    }
+}
+
+/* Table styles */
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+th, td {
+    padding: 0.75rem 1.5rem;
+    text-align: left;
+}
+thead {
+    background-color: #f9fafb;
+}
+tbody tr:nth-child(odd) {
+    background-color: #f9fafb;
+}
+tbody tr:hover {
+    background-color: #f3f4f6;
+}
+
+/* Card styles */
+.shadow {
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1), 0 1px 2px rgba(0, 0, 0, 0.06);
+}
+.shadow-lg {
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+}
+
+/* Sidebar styles */
+aside {
+    transition: all 0.3s ease;
+}
+aside nav ul li {
+    transition: all 0.2s ease;
+    cursor: pointer;
+}
+aside nav ul li:hover {
+    background-color: #f3f4f6;
+}
+
+/* Input styles */
+input[type="text"] {
+    transition: all 0.2s ease;
+}
+input[type="text"]:focus {
+    box-shadow: 0 0 0 2px rgba(59, 130, 246, 0.5);
+}
